@@ -1,0 +1,61 @@
+.footer
+    width: 100%
+    background: #26292e
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    &-block
+        padding: 100px 0
+        &-items
+            flex: 1
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: flex-start
+            &__logo
+                width: 200px
+                height: 58px
+                background: url(../images/logo/logo-yellow.svg) center no-repeat
+                background-size: cover
+            &__slogan
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                align-items: flex-start
+                margin-top: 20px
+                &-text
+                    font-size: 28px
+                    letter-spacing: 1px
+                &-autor
+                    align-self: flex-end
+                    padding: 0 20px
+                    font-size: 20px
+                    border-top: 1px solid #ffe400
+                    margin-top: 20px
+            &__title
+                margin: -2px 0 1em
+                padding: 0
+                font-size: 26px
+                text-transform: uppercase
+                line-height: 1em
+            &__social
+                width: 100%
+                display: flex
+                justify-content: space-around
+                align-items: center
+                &-icon
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    width: 60px
+                    height: 60px
+                    border-radius: 50%
+                    border: 2px solid #fff
+                    color: #ffffff
+                    font-size: 24px
+    &-copyright
+        width: 100%
+        padding: 15px 0
+        background: #323232
+        text-align: center
