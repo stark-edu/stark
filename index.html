@@ -5,36 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="icon" href="./favicon.png">
+    <!-- fontawesome -->
     <link rel="stylesheet" href="./css/fontawesome.css">
     <link rel="stylesheet" href="./css/brands.css">
     <link rel="stylesheet" href="./css/solid.css">
     <link rel="stylesheet" href="./css/regular.css">
+    <!-- fontawesome -->
+    <!-- slider -->
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <!-- slider -->
+    <!-- main style -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- main style -->
 </head>
 <body>
-    
-    <header class="header">
-        <div class="rectangle-bg">
+<div id="wrapper"> 
+    <header class="header" id="main" style="background-image: url(./images/bg/header.jpg);">
+        <!-- <div class="rectangle-bg">
             <img src="./images/bg/rectangle-1.png" alt="" class="rectangle rectangle-1">
             <img src="./images/bg/rectangle-2.png" alt="" class="rectangle rectangle-2">
             <img src="./images/bg/rectangle-3.png" alt="" class="rectangle rectangle-3">
             <img src="./images/bg/rectangle-4.png" alt="" class="rectangle rectangle-4">
             <img src="./images/bg/rectangle-5.png" alt="" class="rectangle rectangle-5">
             <img src="./images/bg/rectangle-6.png" alt="" class="rectangle rectangle-6">
-        </div>
+        </div> -->
         <nav class="header-nav">
             <div class="container">
-                <a href="" class="header-nav__logo">
-                    <!-- <img src="./images/logo/stark-logo-yellow.png" alt="" class="header-nav__logo-img"> -->
-                </a>
+                <a href="#" class="header-nav__logo"></a>
                 <ul class="header-nav__navbar">
-                    <li class="header-nav__navbar-items"><a href="">Главная</a></li>
-                    <li class="header-nav__navbar-items"><a href="">Курсы</a></li>
-                    <li class="header-nav__navbar-items"><a href="">О нас</a></li>
-                    <li class="header-nav__navbar-items"><a href="">Новости</a></li>
-                    <li class="header-nav__navbar-items"><a href="">Контакты</a></li>
-                    <li class="header-nav__navbar-items"><a href="">Подробнее</a></li>
-                    <li class="header-nav__navbar-login"><a href="">Войти</a></li>
+                    <li class="header-nav__navbar-items"><a data-target="anchor" href="#main">Главная</a></li>
+                    <li class="header-nav__navbar-items"><a data-target="anchor" href="#courses">Курсы</a></li>
+                    <li class="header-nav__navbar-items"><a data-target="anchor" href="#about">О нас</a></li>
+                    <li class="header-nav__navbar-items"><a data-target="anchor" href="#video">Новости</a></li>
+                    <li class="header-nav__navbar-items"><a data-target="anchor" href="#contact">Контакты</a></li>
+                    <li class="header-nav__navbar-login"><a data-target="anchor" href="">Войти</a></li>
                 </ul>
                 
             </div>
@@ -46,51 +52,83 @@
                     <div class="header-slider__items-item-title">
                         <h1 class="header-slider__items-item-title-slogan">boost your power now</h1>
                         <p class="header-slider__items-item-title-text">Per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentu</p>
-                        <a href="" class="header-slider__items-item-title-link">Узнать подробнее</a>
+                        <div class="header-slider__items-item-title-link">
+                            <a href="" class="header-slider__items-item-title-link-item">Сдать тест</a>
+                            <a href="" class="header-slider__items-item-title-link-item">Записаться</a>
+                        </div>
+                    </div>
+                    <div class="header-slider__items-item-hero">
+                        <img src="./images/heroes/header-hero.webp" alt="" class="header-slider__items-item-hero-img">
+                    </div>
+                </div>
+                <div class="header-slider__items-item">
+                    <div class="header-slider__items-item-title">
+                        <h1 class="header-slider__items-item-title-slogan">boost your power now</h1>
+                        <p class="header-slider__items-item-title-text">Per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentu</p>
+                        <div class="header-slider__items-item-title-link">
+                            <a href="" class="header-slider__items-item-title-link-item">Сдать тест</a>
+                            <a href="" class="header-slider__items-item-title-link-item">Записаться</a>
+                        </div>
+                    </div>
+                    <div class="header-slider__items-item-hero">
+                        <img src="./images/heroes/header-hero.webp" alt="" class="header-slider__items-item-hero-img">
+                    </div>
+                </div>
+                <div class="header-slider__items-item">
+                    <div class="header-slider__items-item-title">
+                        <h1 class="header-slider__items-item-title-slogan">boost your power now</h1>
+                        <p class="header-slider__items-item-title-text">Per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentu</p>
+                        <div class="header-slider__items-item-title-link">
+                            <a href="" class="header-slider__items-item-title-link-item">Сдать тест</a>
+                            <a href="" class="header-slider__items-item-title-link-item">Записаться</a>
+                        </div>
                     </div>
                     <div class="header-slider__items-item-hero">
                         <img src="./images/heroes/header-hero.webp" alt="" class="header-slider__items-item-hero-img">
                     </div>
                 </div>
             </div>
-            <div class="header-slider__dots">
-                <span class="header-slider__dots-item slider-active"></span>
-                <span class="header-slider__dots-item"></span>
-                <span class="header-slider__dots-item"></span>
-                <span class="header-slider__dots-item"></span>
-            </div>
         </div>
     </header>
     
-    <section class="section-block section-block-courses">
+    <section class="section-block section-block-courses" id="courses">
         <h2 class="section-block-title">Наши курсы</h2>
-        <div class="container courses">
-            <div class="courses__item" style="background-image: url(./images/heroes/hero-girl.png)">
-                <div class="courses__item-title dark-text" style="background: url(./images/bg/card-bg/card-dark-pt.svg)">
-                    <p class="courses__item-title-slogan yellow-text">Английcкий язык</p>
-                    <span class="courses__item-title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit aliquam recusandae est placeat quo nihil.</span>
-                    <a href="" class="courses__item-title-link">Подробнее</a>
+        <div class="container swiper-container">
+            <div class="courses swiper-wrapper">
+                <div class="courses__item swiper-slide" style="background-image: url(./images/heroes/hero-girl.png);">
+                    <div class="courses__item-content dark-text" style="background: url(./images/bg/card-bg/card-dark-pt.svg)">
+                        <p class="courses__item-content-title yellow-text">Английcкий язык</p>
+                        <span class="courses__item-content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit aliquam recusandae est placeat quo nihil.</span>
+                        <a href="" class="courses__item-content-link"></a>
+                    </div>
                 </div>
-            </div>
-            <div class="courses__item" style="background-image: url(./images/heroes/web-bg.png)">
-                <div class="courses__item-title light-text" style="background: url(./images/bg/card-bg/card-yellow-pt.svg)">
-                    <p class="courses__item-title-slogan yellow-text">Web програмист</span></p>
-                    <span class="courses__item-title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit aliquam recusandae est placeat quo nihil.</span>
-                    <a href="" class="courses__item-title-link">Подробнее</a>
+                <div class="courses__item swiper-slide" style="background-image: url(./images/heroes/web-bg.png)">
+                    <div class="courses__item-content white-text" style="background: url(./images/bg/card-bg/card-yellow-pt.svg)">
+                        <p class="courses__item-content-title yellow-text">Web програмист</span></p>
+                        <span class="courses__item-content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit aliquam recusandae est placeat quo nihil.</span>
+                        <a href="" class="courses__item-content-link"></a>
+                    </div>
                 </div>
-            </div>
-            <div class="courses__item" style="background-image: url(./images/heroes/math-bg.png)">
-                <div class="courses__item-title light-text" style="background: url(./images/bg/card-bg/card-white-pt.svg)">
-                    <p class="courses__item-title-slogan yellow-text">Математика</p>
-                    <span class="courses__item-title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit aliquam recusandae est placeat quo nihil.</span>
-                    <a href="" class="courses__item-title-link">Подробнее</a>
+                <div class="courses__item swiper-slide" style="background-image: url(./images/heroes/math-bg.png)">
+                    <div class="courses__item-content white-text" style="background: url(./images/bg/card-bg/card-white-pt.svg)">
+                        <p class="courses__item-content-title yellow-text">Математика</p>
+                        <span class="courses__item-content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit aliquam recusandae est placeat quo nihil.</span>
+                        <a href="" class="courses__item-content-link"></a>
+                    </div>
+                </div>
+                <div class="courses__item swiper-slide" style="background-image: url(./images/heroes/math-bg.png)">
+                    <div class="courses__item-content white-text" style="background: url(./images/bg/card-bg/card-white-pt.svg)">
+                        <p class="courses__item-content-title yellow-text">Математика</p>
+                        <span class="courses__item-content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit aliquam recusandae est placeat quo nihil.</span>
+                        <a href="" class="courses__item-content-link"></a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section-block section-block-about">
-        <h2 class="section-block-title">Lorem, ipsum dolor.</h2>
+    <section class="section-block section-block-about" id="about">
+        <h2 class="section-block-title">О нас</h2>
         <div class="container banner">
             <div class="banner-bg">
                 <img class="banner-bg__border" src="./images/bg/block-bg-white.png" alt="">
@@ -107,7 +145,7 @@
         </div>        
     </section>
 
-    <section class="section-block section-block-video" style="background-image: url(./images/bg/section-video-bg.jpg); background-position: bottom;">
+    <section class="section-block section-block-video" style="background-image: url(./images/bg/section-video-bg.jpg); background-position: bottom;" id="video">
         <h2 class="section-block-title">Lorem, ipsum.</h2>
         <div class="container banner">
             <div class="banner-bg">
@@ -127,42 +165,69 @@
         </div>        
     </section>
 
-    <section class="section-block section-block-online-test">
-        <h2 class="section-block-title">Lorem, ipsum dolor.</h2>
+    <section class="section-block section-block-contact" id="contact">
+        <h2 class="section-block-title">Наши контакты</h2>
         <div class="container banner">
             <div class="banner-bg">
                 <img class="banner-bg__border" src="./images/bg/block-bg-dark.png" alt="">
                 <img class="banner-bg__icon" src="./images/logo/logo-icon-y-d.png" alt="">
             </div>
             <div class="banner-hero">
-                <img src="./images/heroes/about-us.png" alt="" class="banner-hero__img">
+                <div class="banner-hero__contacts">
+                    <div class="banner-hero__contacts-item">
+                        <div class="banner-hero__contacts-item-icon map-icon"><i class="fas fa-globe"></i></div>
+                        <div class="banner-hero__contacts-item-map">
+                            <div style="position:relative;overflow:hidden;"><a href="https://yandex.uz/maps/10335/tashkent/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Ташкент</a><a href="https://yandex.uz/maps/10335/tashkent/?ll=69.290482%2C41.312094&mode=whatshere&utm_medium=mapframe&utm_source=maps&whatshere%5Bpoint%5D=69.290043%2C41.311854&whatshere%5Bzoom%5D=19&z=19" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Узбекистон Овози — Яндекс.Карты</a><iframe src="https://yandex.uz/map-widget/v1/-/CKqLfTnL" width="450" height="450" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="banner-title">
-                <h2 class="banner-title__slogan dark-bg yellow-text">Stark is the best</h2>
-                <span class="banner-title__text">Per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentu</span>
-                <a href="" class="banner-title__link">Know</a>
+            <div class="banner-hero">
+                <div class="banner-hero__contacts">
+                    <div class="banner-hero__contacts-item">
+                        <div class="banner-hero__contacts-item-icon"><i class="fas fa-phone-alt"></i>Телефон:</div>
+                        <div class="banner-hero__contacts-item-text">
+                            <a href="tel:">+998990000000</a>
+                            <a href="tel:">+998990000000</a>
+                        </div>
+                    </div>
+                    <div class="banner-hero__contacts-item">
+                        <div class="banner-hero__contacts-item-icon"><i class="fas fa-map-marker-alt"></i>Адрес:</div>
+                        <div class="banner-hero__contacts-item-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos reprehenderit omnis adipisci deleniti! Suscipit, aspernatur!
+                        </div>
+                    </div>
+                    <div class="banner-hero__contacts-item">
+                        <div class="banner-hero__contacts-item-icon"><i class="fas fa-street-view"></i>Ориентир:</div>
+                        <div class="banner-hero__contacts-item-text">
+                            кафе WOK
+                        </div>
+                    </div>
+                    <div class="banner-hero__contacts-item">
+                        <h4>Также вы можете оставить свои контактные данные и мы вам позвоним!</h4>
+                    </div>
+                    <form action="">
+                        <div class="banner-hero__contacts-item">
+                            <div class="banner-hero__contacts-item-icon"><i class="fas fa-user"></i>Имя:</div>
+                            <div class="banner-hero__contacts-item-text">
+                                <input type="text" name="name" id="name" placeholder="Введите свое имя">
+                            </div>
+                        </div>
+                        <div class="banner-hero__contacts-item">
+                            <div class="banner-hero__contacts-item-icon"><i class="fas fa-phone-alt"></i>Телефон:</div>
+                            <div class="banner-hero__contacts-item-text">
+                                <input type="text" name="phone" id="phone" placeholder="Введите свой телефон">
+                            </div>
+                        </div>
+                        <button type="submit" id="send">Отправить</button>
+                    </form>
+                </div>
             </div>
+            
         </div>        
     </section>
 
-    <!-- <section class="section-block section-block-groups">
-        <div class="rectangle-bg">
-            <img src="./images/bg/rectangle-1.png" alt="" class="rectangle rectangle-1">
-            <img src="./images/bg/rectangle-2.png" alt="" class="rectangle rectangle-2">
-            <img src="./images/bg/rectangle-3.png" alt="" class="rectangle rectangle-3">
-            <img src="./images/bg/rectangle-4.png" alt="" class="rectangle rectangle-4">
-            <img src="./images/bg/rectangle-5.png" alt="" class="rectangle rectangle-5">
-            <img src="./images/bg/rectangle-6.png" alt="" class="rectangle rectangle-6">
-        </div>
-        <div class="container groups">
-            <div class="group"></div>
-            <div class="group"></div>
-            <div class="group"></div>
-            <div class="group"></div>
-        </div>
-    </section> -->
-
-    <footer class="footer light-text">
+    <footer class="footer white-text">
         <div class="container footer-block">
             <div class="footer-block-items">
                 <a href="" class="footer-block-items__logo"></a>
@@ -176,9 +241,22 @@
             Copyright © 2020 STARK.
         </div>
     </footer>
+</div>
+
+<div class="modal">
+    <div class="modal-video">
+        <div class="modal-video-close"><i class="far fa-times-circle"></i></div>
+        <video class="video" controls >
+            <source src="./video/stark.mp4">
+        </video>
+    </div>
+</div>
 
 
     <script src="./src/jquery-3.4.1.js"></script>
+    <script src="./src/slick.min.js"></script>
+    <script src="./src/swiper.min.js"></script>
+    <script src="./src/slider.js"></script>
     <script src="./src/script.js"></script>
 </body>
 </html>
