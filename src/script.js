@@ -2,29 +2,47 @@ $(document).ready(function(){
     $(window).scroll(function(e){
         var windowScroll = document.body.scrollTop || document.documentElement.scrollTop;
 
-        if(windowScroll != 0){
-            $('.header-nav').css({
-                height: '70px',
-                background: '#323232'
-            });
-            $('.header-nav__logo').css({
-                transform: 'scale(0.7)',
-            });
-            $('.header-nav__navbar-items a').css({
-                'font-size': '15px', 
-            });
+        if($('body').width() > 520){
+            if(windowScroll != 0){
+                $('.nav').css({
+                    height: '70px',
+                    background: '#323232'
+                });
+                $('.nav__logo-img').css({
+                    width: '160px'
+                });
+                $('.nav__navbar-items a').css({
+                    'font-size': '15px', 
+                });
+            }else{
+                $('.nav').css({
+                    height: '',
+                    background: ''
+                });
+                $('.nav__logo-img').css({
+                    width: ''
+                });
+                $('.nav__navbar-items a').css({
+                    'font-size': '', 
+                });
+            }
         }else{
-            $('.header-nav').css({
-                height: '',
-                background: ''
-            });
-            $('.header-nav__logo').css({
-                transform: 'scale(1)',
-            });
-            $('.header-nav__navbar-items a').css({
-                'font-size': '', 
-            });
+            if(windowScroll != 0){
+                $('.nav').css({
+                    background: '#323232'
+                });
+            }else{
+                $('.nav').css({
+                    background: '',
+                });
+            }
         }
+    });
+
+    $('.nav__menubtn').click(function(){
+        $('.nav__menubtn').toggleClass('nav__menubtn-active');
+        $('.aside-navbar').toggleClass('navbar-active');
+        $('.nav').toggleClass('dark-bg');
     });
 
     $('a[data-target^="anchor"]').bind('click.smoothscroll', function(){
@@ -32,6 +50,8 @@ $(document).ready(function(){
             bl_top = $(target).offset().top - 0;
 
         $('body, html').animate({scrollTop: bl_top}, 1500);
+        $('.nav__menubtn').toggleClass('nav__menubtn-active');
+        $('.aside-navbar').toggleClass('navbar-active');
     });
 
     $('.banner-hero__playbtn').click(function(){
