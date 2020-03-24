@@ -154,3 +154,28 @@
                     transform: skew(-25deg) scale(1.1)
             & .map-icon
                 width: 30px
+    &-video
+        position: absolute
+        width: 100%
+        height: 100%
+        background: #323232
+        display: none
+        justify-content: center
+        align-items: center
+        z-index: 99
+        & .video
+            width: 70%
+            height: 90%
+            border: 1px solid #ffe400
+        &-close
+            position: absolute
+            right: 10px
+            top: 10px
+            color: #ffe400
+            font-size: 24px
+            cursor: pointer
+
+.banner-video-active
+    display: flex
+    justify-content: center
+    align-items: center

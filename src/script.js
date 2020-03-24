@@ -55,25 +55,13 @@ $(document).ready(function(){
     });
 
     $('.banner-hero__playbtn').click(function(){
-        $('.modal').addClass('modal-active');
-        $('.modal').fadeIn();
-        $('#wrapper').css({
-            'filter': 'blur(5px)'});
-        $('body').css({
-            'overflow': 'hidden'});
-        $('.modal-video').addClass('modal-active');
+        $('.banner-video').addClass('banner-video-active');
         
         let video = document.querySelector('.video');
         video.play();
         
-        $('.modal-video-close').click(function(){
-            $('.modal').removeClass('modal-active');
-            $('.modal').fadeOut();
-            $('#wrapper').css({
-                'filter': ''});
-            $('body').css({
-                'overflow': ''});
-            $('.modal-video').removeClass('modal-active');
+        $('.banner-video-close').click(function(){
+            $('.banner-video').removeClass('banner-video-active');
             video.pause();
         });
     });

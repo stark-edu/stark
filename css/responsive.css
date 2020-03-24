@@ -83,8 +83,13 @@
     .header-slider__dots{
         margin: 20px auto;
     }
+    header-slider__items-item-title{
+        justify-content: center;
+        align-items: center;
+    }
     .header-slider__items-item-title-slogan{
         font-size: 30px;
+        margin: 0;
     }
     .header-slider__items-item-title-link{
         flex-direction: column;
@@ -148,6 +153,10 @@
         height: 200px;
         margin-top: 10px;
     }
+    .banner-video .video{
+        width: 90%;
+        height: 60%;
+    }
     .footer-block,
     .section-block{
         padding: 50px 0;
@@ -158,4 +167,5 @@
     .footer-block-items__slogan-text{
         font-size: 20px;
     }
+    
 }
